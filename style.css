@@ -1,7 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@100;400;700&display=swap");
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
@@ -11,13 +13,48 @@
 
 body {
   background-color: #f6f7fb;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Roboto", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
   height: 100vh;
   overflow: hidden;
   margin: 0;
+}
+
+.info {
+  background-color: darkslategrey;
+  color: darkkhaki;
+  font-family: "Roboto";
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+  padding: 20px;
+  top: 30px;
+  left: 0;
+  z-index: 200;
+}
+h2.project {
+  font-weight: 700;
+  font-size: 25px;
+}
+p.challenge {
+  font-weight: 400;
+  font-size: 20px;
+}
+.tools {
+  font-weight: 100;
+  font-size: 18px;
+  color: rgba(189, 187, 107, 0.7);
+}
+.author {
+  font-weight: 400;
+  font-size: 15px;
+  color: darkkhaki;
 }
 
 .container {
@@ -27,7 +64,7 @@ body {
 .title {
   font-size: 30px;
   font-weight: 700;
-  color: teal;
+  color: darkslategrey;
   margin: 30px 0;
 }
 

@@ -1,17 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 
 * {
   box-sizing: border-box;
 }
 
 :root {
-  --line--border--fill: #3498db;
+  --line--border--fill: #0ac3a7;
   --line--border--empty: #e0e0e0;
 }
 
 body {
   background-color: #f6f7fb;
-  font-family: "Muli", sans-serif;
+  font-family: "Open Sans", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,9 +24,17 @@ body {
   text-align: center;
 }
 
+.title {
+  font-size: 30px;
+  font-weight: 700;
+  color: teal;
+  margin: 30px 0;
+}
+
 .progress-container {
   display: flex;
   justify-content: space-between;
+  align-content: center;
   position: relative;
   margin-bottom: 30px;
   max-width: 100%;
